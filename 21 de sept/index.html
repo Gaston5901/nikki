@@ -288,11 +288,33 @@ svg { width: 100%; height: auto; max-width: 400px; }
   from { transform: translate(0,0) scale(1); opacity:1; }
   to { transform: translate(var(--x),var(--y)) scale(0.2); opacity:0; }
 }
+.volver-inicio{
+    position: fixed;
+    top: 14px;
+    left: 14px;
+    z-index: 9999;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 12px;
+    border-radius: 999px;
+    background: rgba(0,0,0,.40);
+    border: 1px solid rgba(255,255,255,.18);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,.25);
+  }
+  .volver-inicio:hover{ transform: translateY(-1px); background: rgba(0,0,0,.52); }
 
 </style>
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <a class="volver-inicio" href="../index.html" aria-label="Volver al inicio">← Inicio</a>
+
 
 <div id="boton-musica" title="Play / Pause">
   <svg id="icono-musica" class="icono-svg" viewBox="0 0 64 64">
