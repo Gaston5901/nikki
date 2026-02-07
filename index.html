@@ -180,6 +180,21 @@
       font-size: .95rem;
       text-align: center;
     }
+        .badge-desbloqueo{
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      z-index: 3;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, #ffe082 0%, #f48fb1 55%, #e1bee7 100%);
+      color: #7c3a6a;
+      font-weight: 800;
+      font-size: .9rem;
+      box-shadow: 0 6px 18px #f8bbd055, 0 2px 8px #fffde7cc;
+      border: 2px solid #f8bbd0;
+      text-shadow: 0 1px 6px #fffde7cc;
+    }
 
     @media (min-width: 740px){
       .card{ grid-column: span 6; padding: 22px; }
@@ -202,6 +217,16 @@
     </header>
 
     <div class="grid">
+        <a class="card" href="tulipanes/flor_tulipan.html">
+                  <div class="badge-desbloqueo">Nuevo 💖</div>
+
+                  <h2>Flor (Tulipanes)</h2>
+                  <div class="meta">
+                    <span class="tag">tulipanes</span>
+                    <span class="arrow">→</span>
+                  </div>
+                </a>
+
                   <a class="card bloqueada" id="card-1" href="corazonquetirafrases/index.html" style="opacity:0.5; pointer-events:none; filter: grayscale(0.7); position:relative;">
               <h2>Corazones que tira frases <span style="font-size:1.2em;"></span></h2>
               <div class="meta">
